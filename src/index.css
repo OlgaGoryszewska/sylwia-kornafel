@@ -1,13 +1,21 @@
+@font-face {
+  font-family: 'Bochan';
+  src: url('./assets/fonts/Bochan.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BochanAlternative';
+  src: url('./assets/fonts/BochanAlternative.otf') format('opentype');
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-primary;
-  @apply mr-8;
-  @apply ml-8;
-  @apply text-black;
-  @apply flex;
-  @apply flex-col;
-  @apply min-h-screen;
+  @apply bg-primary mx-8 text-black flex flex-col min-h-screen; ;
+
 }
+
+
+
