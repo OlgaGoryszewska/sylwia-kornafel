@@ -18,8 +18,8 @@ export const Menu = () => {
   };
 
   return (
-    <div>
-      <button>
+    <div className="flex flex-col max-w-full ">
+      <button className="flex flex-row justify-end">
         <img
           alt="menu"
           src={logo}
@@ -28,6 +28,9 @@ export const Menu = () => {
           onClick={handleClickAnimation}
         />
       </button>
+      <ul className="flex flex-col mx-auto">
+        <li>{showMenu && <Link to="/">Home</Link>}</li>
+      </ul>
     </div>
   );
 };

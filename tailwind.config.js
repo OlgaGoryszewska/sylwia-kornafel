@@ -1,5 +1,3 @@
-
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -9,10 +7,13 @@ module.exports = {
         primary: '#D8D7D7',
         black: '#252323',
         brown: '#CB845C',
+        gold:'#B5983F'
+
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        popins: ['Poppins', 'sans-serif'],
         bochan: ['Bochan', 'sans-serif'],
+        bochanstyled: ['BochanAlternative', 'sans-serif'],
       },
     },
   },
