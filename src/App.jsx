@@ -1,15 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
+import { Nav } from './components/Nav';
 
 // Pages
-import Home from './pages/Home';
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Nav />
+        <Routes></Routes>
       </div>
     </div>
   );

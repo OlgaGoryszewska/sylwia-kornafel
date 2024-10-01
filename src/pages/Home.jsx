@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Home = () => {
+export const Home = () => {
   return (
     <div>
       <h1 className="font-bochan text-2xl">Home</h1>
     </div>
   );
 };
-
-export default Home;
