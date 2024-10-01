@@ -1,9 +1,10 @@
 import React from 'react';
+import Sylwia from '../assets/img/sylwia.jpg';
 
 const HomePage = () => {
   return (
     <div>
-      <h1 className="font-bochan">Hello </h1>
+      <img src={Sylwia} alt="Master Sylwia Kornafel, permanentny makijaz" />
     </div>
   );
 };
