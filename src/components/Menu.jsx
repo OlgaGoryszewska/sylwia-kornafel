@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { gsap } from 'gsap';
+
+import logo from '../assets/img/menuLogo.png';
 
 export const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const logoRef = useRef(null);
 
   const handleClickAnimation = () => {
     gsap.fromTo(
-      palmRef.current,
+      logoRef.current,
       { rotation: 0, scale: 1 },
       { rotation: 360, scale: 1.2, duration: 1, ease: 'power2.inOut' }
     );
@@ -17,7 +20,13 @@ export const Menu = () => {
   return (
     <div>
       <button>
-        <img alt="menu" className="w-12 h-12" onClick={handleClickAnimation} />
+        <img
+          alt="menu"
+          src={logo}
+          className="w-12 m-4"
+          ref={logoRef}
+          onClick={handleClickAnimation}
+        />
       </button>
     </div>
   );
