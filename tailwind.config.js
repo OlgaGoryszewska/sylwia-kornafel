@@ -14,7 +14,27 @@ module.exports = {
         bochan: ['Bochan', 'sans-serif'],
         bochanstyled: ['BochanAlternative', 'sans-serif'],
       },
+      textShadow: {
+        sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+        DEFAULT: '2px 2px 4px rgba(0, 0, 0, 0.6)',
+        lg: '3px 3px 6px rgba(0, 0, 0, 0.7)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-shadow-sm': {
+          'text-shadow': '1px 1px 2px rgba(0, 0, 0, 0.5)',
+        },
+        '.text-shadow': {
+          'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.6)',
+        },
+        '.text-shadow-lg': {
+          'text-shadow': '3px 3px 6px rgba(0, 0, 0, 0.7)',
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };

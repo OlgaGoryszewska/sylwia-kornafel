@@ -39,7 +39,7 @@ export const Menu = () => {
         <img
           alt="menu"
           src={logo}
-          className="w-12 m-4"
+          className="w-16 m-4"
           ref={logoRef}
           onClick={handleClickAnimation}
         />
