@@ -1,5 +1,5 @@
 import React from 'react';
-import Sylwia from '../assets/img/sylwia.jpg';
+import Sylwia from '../assets/img/sylwiaAndJola.jpg';
 
 const HomePage = () => {
   return (
