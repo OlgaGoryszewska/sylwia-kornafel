@@ -31,8 +31,11 @@ export const Menu = () => {
   });
 
   return (
-    <div className="flex flex-col max-w-full ">
-      <button ref={menuRef} className="flex flex-row justify-end">
+    <div className="flex flex-col max-w-full className='bg-transparent' ">
+      <button
+        ref={menuRef}
+        className="flex flex-row justify-end className='bg-transparent"
+      >
         <img
           alt="menu"
           src={logo}
