@@ -27,7 +27,7 @@ const HomePage = () => {
         alt="Master Sylwia Kornafel, permanentny makijaz"
       />
       <p
-        className="font-bochan text-4xl relative z-10 mt-80 text-white p-10 text-shadow-lg leading-normal text-center
+        className="font-bochan text-4xl relative z-10 mt-80 text-lime p-10 text-shadow-lg leading-normal text-center
          "
         ref={textRef}
       >
