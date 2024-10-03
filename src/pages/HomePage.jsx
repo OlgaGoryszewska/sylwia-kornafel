@@ -12,7 +12,7 @@ const HomePage = () => {
     gsap.to(textRef.current, {
       duration: 3,
       scrambleText: {
-        text: 'Witaj w Białym Lotosie',
+        text: 'Czas na zmiany, czas na siebie',
       },
       chars: 'X0',
       ease: 'power3',
@@ -31,7 +31,7 @@ const HomePage = () => {
          "
         ref={textRef}
       >
-        Witaj w Białym Lotosie
+        Czas na zmiany, czas na siebie
       </p>
     </div>
   );

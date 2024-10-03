@@ -8,6 +8,7 @@ module.exports = {
         black: '#252323',
         brown: '#CB845C',
         gold: '#B5983F',
+        lime: '#FFF761',
       },
       fontFamily: {
         popins: ['Poppins', 'sans-serif'],
