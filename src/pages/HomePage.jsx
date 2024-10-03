@@ -10,11 +10,11 @@ const HomePage = () => {
 
   useEffect(() => {
     gsap.to(textRef.current, {
-      duration: 3,
+      duration: 2,
       scrambleText: {
         text: 'Czas na zmiany, czas na siebie',
       },
-      chars: 'X0',
+      chars: 'BL',
       ease: 'power3',
     });
   }, []);
@@ -27,7 +27,7 @@ const HomePage = () => {
         alt="Master Sylwia Kornafel, permanentny makijaz"
       />
       <p
-        className="font-bochan text-4xl relative z-10 mt-80 text-lime p-10 text-shadow-lg leading-normal text-center
+        className="font-bochanstyled text-5xl relative z-10 mt-80 text-lime p-4 text-shadow-lg leading-normal text-center
          "
         ref={textRef}
       >
