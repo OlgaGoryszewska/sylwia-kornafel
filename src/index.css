@@ -6,6 +6,10 @@
   font-family: 'BochanAlternative';
   src: url('./assets/fonts/BochanAlternative.otf') format('opentype');
 }
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('./assets/fonts/DMSerifDisplay-Regular.ttf');
+}
 
 @tailwind base;
 @tailwind components;
@@ -17,3 +21,4 @@ body {
 li {
   @apply font-bochanstyled text-gold text-3xl;
 }
+

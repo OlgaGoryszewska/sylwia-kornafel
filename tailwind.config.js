@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D0CFD4',
+        primary: '#E8E8E8',
         black: '#252323',
         brown: '#CB845C',
         gold: '#B5983F',
@@ -14,6 +14,7 @@ module.exports = {
         popins: ['Poppins', 'sans-serif'],
         bochan: ['Bochan', 'sans-serif'],
         bochanstyled: ['BochanAlternative', 'sans-serif'],
+        dmserif: ['DM Serif Display', 'sans-serif'],
       },
       textShadow: {
         sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',

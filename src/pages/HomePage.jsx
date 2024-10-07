@@ -1,38 +1,30 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
-import Sylwia from '../assets/img/sylwiaAndJola.jpg';
-import { gsap } from 'gsap';
-import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
-gsap.registerPlugin(ScrambleTextPlugin);
+import Logo from '../assets/img/logo.png';
 
 const HomePage = () => {
-  const textRef = useRef(null);
-
-  useEffect(() => {
-    gsap.to(textRef.current, {
-      duration: 2,
-      scrambleText: {
-        text: 'Czas na zmiany, czas na siebie',
-      },
-      chars: 'BL',
-      ease: 'power3',
-    });
-  }, []);
-
   return (
-    <div className=" flex flex-col ">
+    <div
+      className=" flex flex-col 
+    px-8  "
+    >
       <img
-        className="absolute"
-        src={Sylwia}
-        alt="Master Sylwia Kornafel, permanentny makijaz"
+        src={Logo}
+        alt="Logo Bialy lotos ciechanow"
+        className="w-52 mx-auto py-6"
       />
-      <p
-        className="font-bochanstyled text-4xl relative z-10 mt-80 text-lime p-4 text-shadow-lg leading-normal text-center
-         "
-        ref={textRef}
-      >
-        Czas na zmiany, czas na siebie
-      </p>
+      <div className="bg-white p-4 mx-auto rounded-2xl ">
+        <h1 className="text-lg font-dmserif font-black">
+          Nowa Strona Internetowa w Budowie
+        </h1>
+        <p>
+          Witamy na naszej nowej stronie internetowej! Z radością informujemy,
+          że Salon Biały Lotos pracuje nad uruchomieniem nowej platformy.
+          Chcemy, aby była ona intuicyjna, nowoczesna i pełna inspiracji dla
+          naszych klientów. Obecnie strona jest w trakcie budowy, ale zapraszamy
+          do zapoznania się z naszymi ofertami na listopad! Poniżej znajdziesz
+          najnowsze propozycje, które przygotowaliśmy specjalnie dla Ciebie.
+        </p>
+      </div>
     </div>
   );
 };
