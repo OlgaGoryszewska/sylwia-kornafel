@@ -10,6 +10,10 @@
   font-family: 'DM Serif Display';
   src: url('./assets/fonts/DMSerifDisplay-Regular.ttf');
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
 
 @tailwind base;
 @tailwind components;
@@ -21,4 +25,6 @@ body {
 li {
   @apply font-bochanstyled text-gold text-3xl;
 }
-
+p {
+  @apply font-poppins text-black text-sm;
+}

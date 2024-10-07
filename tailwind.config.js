@@ -15,6 +15,7 @@ module.exports = {
         bochan: ['Bochan', 'sans-serif'],
         bochanstyled: ['BochanAlternative', 'sans-serif'],
         dmserif: ['DM Serif Display', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       textShadow: {
         sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',
