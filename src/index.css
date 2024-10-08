@@ -28,3 +28,6 @@ li {
 p {
   @apply font-poppins text-black text-sm;
 }
+.card {
+  @apply bg-white p-4 rounded-2xl shadow-lg;
+}

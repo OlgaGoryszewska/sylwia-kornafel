@@ -24,7 +24,7 @@ export const Menu = () => {
   useEffect(() => {
     gsap.to(linkRef.current, {
       duration: 1,
-      scrambleText: { text: 'Home' },
+      scrambleText: { text: 'Umów' },
       chars: 'X0',
       ease: 'power3',
     });
@@ -39,15 +39,15 @@ export const Menu = () => {
         <img
           alt="menu"
           src={logo}
-          className="w-12 m-4 hidden"
+          className="w-12 m-4"
           ref={logoRef}
           onClick={handleClickAnimation}
         />
       </button>
       {showMenu && (
-        <ul className="flex flex-col mx-auto">
+        <ul className="flex flex-col pb-12 shadow-lg max-w-full mb-12">
           <li ref={linkRef}>
-            <Link to="/">Home</Link>
+            <Link to="/">Umów</Link>
           </li>
         </ul>
       )}
