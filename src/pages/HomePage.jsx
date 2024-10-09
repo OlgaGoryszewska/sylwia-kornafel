@@ -1,7 +1,8 @@
-import Noice from '../assets/img/noice.png';
 import React, { useEffect, useRef } from 'react';
 import { SplitText } from 'gsap/SplitText';
 import { gsap } from 'gsap';
+import Face from '../assets/img/faceTwo.png';
+import { Nav } from '../components/Nav';
 
 gsap.registerPlugin(SplitText); // register the plugin
 
@@ -23,6 +24,13 @@ const HomePage = () => {
 
   return (
     <>
+      <Nav className=" absolute" />
+      <img
+        className="relative"
+        src={Face}
+        alt="bialy lotos ciechanow main picture of a women face
+        "
+      />
       <div className=" flex flex-col px-8 pt-12 ">
         <div ref={textRef} className="card">
           <h1 className="text-lg font-dmserif font-black">
@@ -45,7 +53,6 @@ const HomePage = () => {
         </div>
       </div>
       <div className="pt-6">
-        <img className="absolute z-10" src={Noice} alt="noice" />
         <div className="card relative z-20 mt-8 m-8">
           <p>
             W PAŹDZIERNIKU -10% NA ZABIEGI NA TWARZ U GABRIELI GOTAB! Chcesz
