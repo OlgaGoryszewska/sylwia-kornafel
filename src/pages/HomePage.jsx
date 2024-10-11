@@ -26,7 +26,7 @@ const HomePage = () => {
     <>
       <Nav className=" absolute" />
       <img
-        className="relative"
+        className="relative hidden"
         src={Face}
         alt="bialy lotos ciechanow main picture of a women face
         "
@@ -53,7 +53,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="pt-6">
-        <div className="card relative z-20 mt-8 m-8">
+        <div className="card relative z-20 mt-8 m-8 hidden">
           <p>
             W PAŹDZIERNIKU -10% NA ZABIEGI NA TWARZ U GABRIELI GOTAB! Chcesz
             zadbać o swoją cerę i poczuć się wyjątkowo? Skorzystaj z
