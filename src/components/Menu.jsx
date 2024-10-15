@@ -31,25 +31,20 @@ export const Menu = () => {
   });
 
   return (
-    <div className="flex flex-col max-w-full bg-transparent  ">
-      <button
-        ref={menuRef}
-        className="flex flex-row justify-end bg-transparent"
-      >
+    <div className="flex flex-col max-w-full  ">
+      <button ref={menuRef} className="flex flex-row justify-end bg-primary">
         <img
           alt="menu"
           src={logo}
-          className="w-12 m-4 hidden"
+          className="w-11 m-2"
           ref={logoRef}
           onClick={handleClickAnimation}
         />
       </button>
       {showMenu && (
-        <ul className="flex flex-col pb-12 max-w-full mb-12 bg-primary">
-          <li ref={linkRef}>
-            <Link to="/">Umów</Link>
-          </li>
-        </ul>
+        <div className="flex flex-col bg-primary z-40">
+          <Link to="/">Umów</Link>
+        </div>
       )}
     </div>
   );
