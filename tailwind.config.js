@@ -3,6 +3,9 @@ module.exports = {
   content: ['index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      animation: {
+        
+      },
       colors: {
         primary: '#E8E8E8',
         black: '#3C3B3F',

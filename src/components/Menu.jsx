@@ -43,7 +43,11 @@ export const Menu = () => {
       </button>
       {showMenu && (
         <div className="flex flex-col bg-primary z-40">
-          <Link to="/">Umów</Link>
+          <ul className="">
+            <li className="">
+              <Link to="/">Umów</Link>
+            </li>
+          </ul>
         </div>
       )}
     </div>
