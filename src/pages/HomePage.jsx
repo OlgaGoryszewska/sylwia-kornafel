@@ -1,5 +1,6 @@
-import Face from '../assets/img/faceNoice.jpg';
+import Face from '../assets/img/faceNoiceHorisontal.jpg';
 import { Nav } from '../components/Nav';
+import { AboutUs } from '../components/AboutUs';
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -16,7 +17,7 @@ const HomePage = () => {
       { x: 0 }, // Start position
       {
         x: `-${textWidth}px`, // End position (move by the width of the text)
-        duration: 30, // Duration of one full cycle
+        duration: 45, // Duration of one full cycle
         repeat: -1, // Infinite loop
         ease: 'linear', // Linear movement (constant speed)
       }
@@ -33,25 +34,28 @@ const HomePage = () => {
             ref={textRef1}
             className="font-bochanstyled text-gold text-5xl inline-block text-shadow-lg"
           >
-            • PMU • Podologia • Zabiegi Na Twarz • Lasery • PMU • Podologia •
-            Zabiegi Na Twarz • Lasery • PMU • Podologia • Zabiegi Na Twarz •
-            Lasery
+            &nbsp;• PMU • Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery •
+            PMU • Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery • PMU •
+            Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery&nbsp;
           </p>
           {/* Second text element (duplicate of the first) */}
           <p
             ref={textRef2}
             className="font-bochanstyled text-gold text-5xl inline-block text-shadow-lg"
           >
-            • PMU • Podologia • Zabiegi Na Twarz • Lasery • PMU • Podologia •
-            Zabiegi Na Twarz • Lasery
+            &nbsp;• PMU • Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery •
+            PMU • Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery • PMU •
+            Podologia • Kosmetyka • Zabiegi Na Twarz • Lasery&nbsp;
           </p>
         </div>
         <img
-          className="relative"
+          className="relative object-cover
+          "
           src={Face}
           alt="bialy lotos ciechanow main picture of a women face"
         />
       </div>
+      <AboutUs />
     </>
   );
 };
