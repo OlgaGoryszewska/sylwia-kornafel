@@ -32,7 +32,10 @@ export const Menu = () => {
 
   return (
     <div className="flex flex-col max-w-full  ">
-      <button ref={menuRef} className="flex flex-row justify-end bg-primary">
+      <button
+        ref={menuRef}
+        className="flex flex-row justify-end bg-primary w-full"
+      >
         <img
           alt="menu"
           src={logo}
@@ -42,12 +45,22 @@ export const Menu = () => {
         />
       </button>
       {showMenu && (
-        <div className="flex flex-col bg-primary z-40">
-          <ul className="">
-            <li className="">
-              <Link to="/">Umów</Link>
-            </li>
-          </ul>
+        <div
+          className=" rounded-bl-md flex flex-col bg-primary z-40 px-16 pt-4 font-bochan
+        "
+        >
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Umów
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Zabiegi
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            O nas
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Kontakt
+          </Link>
         </div>
       )}
     </div>

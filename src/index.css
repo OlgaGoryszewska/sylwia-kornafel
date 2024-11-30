@@ -23,7 +23,7 @@ body {
   @apply bg-primary text-black flex flex-col min-h-screen;
 }
 li {
-  @apply font-bochanstyled text-gold text-2xl;
+  @apply font-bochan text-gold text-2xl;
 }
 p {
   @apply font-poppins text-black text-sm;
