@@ -31,25 +31,37 @@ export const Menu = () => {
   });
 
   return (
-    <div className="flex flex-col max-w-full bg-transparent  ">
+    <div className="flex flex-col max-w-full  ">
       <button
         ref={menuRef}
-        className="flex flex-row justify-end bg-transparent"
+        className="flex flex-row justify-end bg-primary w-full"
       >
         <img
           alt="menu"
           src={logo}
-          className="w-12 m-4 hidden"
+          className="w-11 m-2"
           ref={logoRef}
           onClick={handleClickAnimation}
         />
       </button>
       {showMenu && (
-        <ul className="flex flex-col pb-12 max-w-full mb-12 bg-primary">
-          <li ref={linkRef}>
-            <Link to="/">Umów</Link>
-          </li>
-        </ul>
+        <div
+          className=" rounded-bl-md flex flex-col bg-primary z-40 px-16 pt-4 font-bochan
+        "
+        >
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Umów
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Zabiegi
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            O nas
+          </Link>
+          <Link className="w-full text-center text-gold pb-4" to="/">
+            Kontakt
+          </Link>
+        </div>
       )}
     </div>
   );
