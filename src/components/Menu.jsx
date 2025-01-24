@@ -50,10 +50,10 @@ export const Menu = () => {
         "
         >
           <Link className="w-full text-center text-gold pb-4" to="https://booksy.com/pl-pl/142271_salon-pieknosci-bialy-lotos_salon-kosmetyczny_4495_ciechanow#ba_s=seo">
-            Umów 
+            Rezerwacja/ kosmetyka
           </Link>
           <Link className="w-full text-center text-gold pb-4" to="https://booksy.com/pl-pl/108807_salon-bialy-lotos-centrum-zdrowych-stop_podologia_4495_ciechanow#ba_s=sr_1">
-           Umów/ podologia
+           Rezerwacja/ podologia
           </Link>
           <Link className="w-full text-center text-gold pb-4 hidden" to="/">
             O nas

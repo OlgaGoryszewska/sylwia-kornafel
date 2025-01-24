@@ -26,7 +26,7 @@ const HomePage = () => {
     <>
       <Nav className=" absolute" />
       <img
-        className="relative hidden"
+        className="relative "
         src={Face}
         alt="bialy lotos ciechanow main picture of a women face
         "
