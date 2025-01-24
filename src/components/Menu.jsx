@@ -49,16 +49,16 @@ export const Menu = () => {
           className=" rounded-bl-md flex flex-col bg-primary z-40 px-16 pt-4 font-bochan
         "
         >
-          <Link className="w-full text-center text-gold pb-4" to="/">
-            Umów
+          <Link className="w-full text-center text-gold pb-4" to="https://booksy.com/pl-pl/142271_salon-pieknosci-bialy-lotos_salon-kosmetyczny_4495_ciechanow#ba_s=seo">
+            Rezerwacja/ kosmetyka
           </Link>
-          <Link className="w-full text-center text-gold pb-4" to="/">
-            Zabiegi
+          <Link className="w-full text-center text-gold pb-4" to="https://booksy.com/pl-pl/108807_salon-bialy-lotos-centrum-zdrowych-stop_podologia_4495_ciechanow#ba_s=sr_1">
+           Rezerwacja/ podologia
           </Link>
-          <Link className="w-full text-center text-gold pb-4" to="/">
+          <Link className="w-full text-center text-gold pb-4 hidden" to="/">
             O nas
           </Link>
-          <Link className="w-full text-center text-gold pb-4" to="/">
+          <Link className="w-full text-center text-gold pb-4 hidden" to="/">
             Kontakt
           </Link>
         </div>
